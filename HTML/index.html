@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🌤️ Weather App</h1>
+    <button id="darkModeToggle" title="Toggle Dark Mode">🌙</button>
+  </header>
+  <main>
+    <section id="weather-section">
+      <form id="weatherForm" autocomplete="off">
+        <input type="text" id="city" name="city" placeholder="Enter city name" required/>
+        <button type="submit">Get Weather</button>
+        <button type="button" id="geoBtn" title="Use my location">📍</button>
+      </form>
+      <div class="unit-toggle">
+        <label>°C</label>
+        <input type="checkbox" id="unitToggle" />
+        <label>°F</label>
+      </div>
+      <div id="weatherResult"></div>
+      <div id="forecastResult"></div>
+      <div id="history"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy;  Weather App  &middot; <span style="font-size:13px;">Powered by <a href="https://openweathermap.org/" target="_blank" rel="noopener">OpenWeatherMap</a></span></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
